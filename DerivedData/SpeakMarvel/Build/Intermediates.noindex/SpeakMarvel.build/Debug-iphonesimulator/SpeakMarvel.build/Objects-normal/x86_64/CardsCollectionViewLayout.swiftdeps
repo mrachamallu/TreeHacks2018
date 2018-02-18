@@ -1,0 +1,736 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CardsCollectionViewLayout"
+provides-nominal:
+- "11SpeakMarvel25CardsCollectionViewLayoutC"
+provides-member:
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", ""]
+provides-dynamic-lookup:
+- "collectionView"
+- "collectionViewContentSize"
+- "layoutAttributesForElements"
+- "layoutAttributesForItem"
+- "prepare"
+- "shouldInvalidateLayout"
+depends-top-level:
+- !private "!="
+- !private "%"
+- !private "*"
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "-="
+- !private "..<"
+- !private "/"
+- !private "<"
+- !private "=="
+- !private "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "CGAffineTransform"
+- "CGFloat"
+- !private "CGPoint"
+- "CGRect"
+- "CGSize"
+- "CardsCollectionViewLayout"
+- "IndexPath"
+- "Int"
+- !private "StringLiteralType"
+- !private "TernaryPrecedence"
+- "UICollectionView"
+- "UICollectionViewLayout"
+- "UICollectionViewLayoutAttributes"
+- !private "assert"
+- !private "max"
+- !private "min"
+- !private "pow"
+- !private "~="
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "map"]
+- !private ["s23BidirectionalCollectionP", "row"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["So15CALayerDelegateP", "contentOffset"]
+- !private ["So15CALayerDelegateP", "numberOfItems"]
+- !private ["So15CALayerDelegateP", "numberOfSections"]
+- !private ["SC17CGAffineTransformV", "init"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
+- !private ["SC7CGPointV", "init"]
+- !private ["SC7CGPointV", "x"]
+- !private ["SC7CGPointV", "y"]
+- !private ["SC6CGRectV", "height"]
+- !private ["SC6CGRectV", "midY"]
+- !private ["SC6CGRectV", "width"]
+- ["SC6CGSizeV", "init"]
+- !private ["s7CVarArgP", "CGAffineTransform"]
+- !private ["s7CVarArgP", "CGFloat"]
+- !private ["s7CVarArgP", "CGPoint"]
+- ["s7CVarArgP", "CGSize"]
+- !private ["s7CVarArgP", "IndexPath"]
+- !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "UICollectionViewLayoutAttributes"]
+- !private ["s7CVarArgP", "alpha"]
+- !private ["s7CVarArgP", "assert"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "center"]
+- !private ["s7CVarArgP", "collectionView"]
+- !private ["s7CVarArgP", "computeLayoutAttributesForItem"]
+- !private ["s7CVarArgP", "contentOffset"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "invalidateLayout"]
+- !private ["s7CVarArgP", "itemSize"]
+- !private ["s7CVarArgP", "max"]
+- !private ["s7CVarArgP", "maximumVisibleItems"]
+- !private ["s7CVarArgP", "min"]
+- !private ["s7CVarArgP", "numberOfItems"]
+- !private ["s7CVarArgP", "numberOfSections"]
+- !private ["s7CVarArgP", "pow"]
+- !private ["s7CVarArgP", "prepare"]
+- !private ["s7CVarArgP", "scale"]
+- !private ["s7CVarArgP", "size"]
+- !private ["s7CVarArgP", "spacing"]
+- !private ["s7CVarArgP", "transform"]
+- !private ["s7CVarArgP", "zIndex"]
+- ["s7CVarArgP", ""]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "Bool"]
+- !private ["11SpeakMarvel25CardsCollectionViewLayoutC", "CGAffineTransform"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "CGFloat"]
+- !private ["11SpeakMarvel25CardsCollectionViewLayoutC", "CGPoint"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "CGRect"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "CGSize"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "IndexPath"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "Int"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "UICollectionView"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "UICollectionViewLayoutAttributes"]
+- !private ["11SpeakMarvel25CardsCollectionViewLayoutC", "assert"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "collectionView"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "collectionViewContentSize"]
+- !private ["11SpeakMarvel25CardsCollectionViewLayoutC", "computeLayoutAttributesForItem"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "deinit"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "init"]
+- !private ["11SpeakMarvel25CardsCollectionViewLayoutC", "invalidateLayout"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "itemSize"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "layoutAttributesForElements"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "layoutAttributesForItem"]
+- !private ["11SpeakMarvel25CardsCollectionViewLayoutC", "max"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "maximumVisibleItems"]
+- !private ["11SpeakMarvel25CardsCollectionViewLayoutC", "min"]
+- !private ["11SpeakMarvel25CardsCollectionViewLayoutC", "pow"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "prepare"]
+- !private ["11SpeakMarvel25CardsCollectionViewLayoutC", "scale"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "shouldInvalidateLayout"]
+- ["11SpeakMarvel25CardsCollectionViewLayoutC", "spacing"]
+- !private ["11SpeakMarvel25CardsCollectionViewLayoutC", "transform"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "map"]
+- !private ["s10CollectionP", "row"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "row"]
+- !private ["s14CountableRangeV", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "CGAffineTransform"]
+- !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
+- !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
+- ["s28CustomDebugStringConvertibleP", "CGSize"]
+- !private ["s28CustomDebugStringConvertibleP", "IndexPath"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "UICollectionViewLayoutAttributes"]
+- !private ["s28CustomDebugStringConvertibleP", "alpha"]
+- !private ["s28CustomDebugStringConvertibleP", "assert"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "center"]
+- !private ["s28CustomDebugStringConvertibleP", "collectionView"]
+- !private ["s28CustomDebugStringConvertibleP", "computeLayoutAttributesForItem"]
+- !private ["s28CustomDebugStringConvertibleP", "contentOffset"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "invalidateLayout"]
+- !private ["s28CustomDebugStringConvertibleP", "itemSize"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "max"]
+- !private ["s28CustomDebugStringConvertibleP", "maximumVisibleItems"]
+- !private ["s28CustomDebugStringConvertibleP", "midY"]
+- !private ["s28CustomDebugStringConvertibleP", "min"]
+- !private ["s28CustomDebugStringConvertibleP", "numberOfItems"]
+- !private ["s28CustomDebugStringConvertibleP", "numberOfSections"]
+- !private ["s28CustomDebugStringConvertibleP", "pow"]
+- !private ["s28CustomDebugStringConvertibleP", "prepare"]
+- !private ["s28CustomDebugStringConvertibleP", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "scale"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "spacing"]
+- !private ["s28CustomDebugStringConvertibleP", "transform"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s28CustomDebugStringConvertibleP", "zIndex"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "midY"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s29CustomPlaygroundQuickLookableP", "x"]
+- !private ["s29CustomPlaygroundQuickLookableP", "y"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "height"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "midY"]
+- !private ["s17CustomReflectableP", "row"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s17CustomReflectableP", "x"]
+- !private ["s17CustomReflectableP", "y"]
+- !private ["s23CustomStringConvertibleP", "CGAffineTransform"]
+- !private ["s23CustomStringConvertibleP", "CGFloat"]
+- !private ["s23CustomStringConvertibleP", "CGPoint"]
+- ["s23CustomStringConvertibleP", "CGSize"]
+- !private ["s23CustomStringConvertibleP", "IndexPath"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "UICollectionViewLayoutAttributes"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "alpha"]
+- !private ["s23CustomStringConvertibleP", "assert"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "center"]
+- !private ["s23CustomStringConvertibleP", "collectionView"]
+- !private ["s23CustomStringConvertibleP", "computeLayoutAttributesForItem"]
+- !private ["s23CustomStringConvertibleP", "contentOffset"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "invalidateLayout"]
+- !private ["s23CustomStringConvertibleP", "itemSize"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "max"]
+- !private ["s23CustomStringConvertibleP", "maximumVisibleItems"]
+- !private ["s23CustomStringConvertibleP", "min"]
+- !private ["s23CustomStringConvertibleP", "numberOfItems"]
+- !private ["s23CustomStringConvertibleP", "numberOfSections"]
+- !private ["s23CustomStringConvertibleP", "pow"]
+- !private ["s23CustomStringConvertibleP", "prepare"]
+- !private ["s23CustomStringConvertibleP", "row"]
+- !private ["s23CustomStringConvertibleP", "scale"]
+- !private ["s23CustomStringConvertibleP", "size"]
+- !private ["s23CustomStringConvertibleP", "spacing"]
+- !private ["s23CustomStringConvertibleP", "transform"]
+- !private ["s23CustomStringConvertibleP", "zIndex"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "height"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "midY"]
+- !private ["s9DecodableP", "row"]
+- !private ["s9DecodableP", "width"]
+- !private ["s9DecodableP", "x"]
+- !private ["s9DecodableP", "y"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "height"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "midY"]
+- !private ["s9EncodableP", "row"]
+- !private ["s9EncodableP", "width"]
+- !private ["s9EncodableP", "x"]
+- !private ["s9EncodableP", "y"]
+- !private ["s9EquatableP", "CGAffineTransform"]
+- !private ["s9EquatableP", "CGFloat"]
+- !private ["s9EquatableP", "CGPoint"]
+- ["s9EquatableP", "CGSize"]
+- !private ["s9EquatableP", "IndexPath"]
+- !private ["s9EquatableP", "Int"]
+- !private ["s9EquatableP", "UICollectionViewLayoutAttributes"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "alpha"]
+- !private ["s9EquatableP", "assert"]
+- !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "center"]
+- !private ["s9EquatableP", "collectionView"]
+- !private ["s9EquatableP", "computeLayoutAttributesForItem"]
+- !private ["s9EquatableP", "contentOffset"]
+- !private ["s9EquatableP", "height"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "invalidateLayout"]
+- !private ["s9EquatableP", "itemSize"]
+- !private ["s9EquatableP", "map"]
+- !private ["s9EquatableP", "max"]
+- !private ["s9EquatableP", "maximumVisibleItems"]
+- !private ["s9EquatableP", "midY"]
+- !private ["s9EquatableP", "min"]
+- !private ["s9EquatableP", "numberOfItems"]
+- !private ["s9EquatableP", "numberOfSections"]
+- !private ["s9EquatableP", "pow"]
+- !private ["s9EquatableP", "prepare"]
+- !private ["s9EquatableP", "row"]
+- !private ["s9EquatableP", "scale"]
+- !private ["s9EquatableP", "size"]
+- !private ["s9EquatableP", "spacing"]
+- !private ["s9EquatableP", "transform"]
+- !private ["s9EquatableP", "width"]
+- !private ["s9EquatableP", "x"]
+- !private ["s9EquatableP", "y"]
+- !private ["s9EquatableP", "zIndex"]
+- ["s9EquatableP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "row"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s8HashableP", "CGAffineTransform"]
+- !private ["s8HashableP", "CGFloat"]
+- !private ["s8HashableP", "CGPoint"]
+- ["s8HashableP", "CGSize"]
+- !private ["s8HashableP", "IndexPath"]
+- !private ["s8HashableP", "Int"]
+- !private ["s8HashableP", "UICollectionViewLayoutAttributes"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "alpha"]
+- !private ["s8HashableP", "assert"]
+- !private ["s8HashableP", "bounds"]
+- !private ["s8HashableP", "center"]
+- !private ["s8HashableP", "collectionView"]
+- !private ["s8HashableP", "computeLayoutAttributesForItem"]
+- !private ["s8HashableP", "contentOffset"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "invalidateLayout"]
+- !private ["s8HashableP", "itemSize"]
+- !private ["s8HashableP", "max"]
+- !private ["s8HashableP", "maximumVisibleItems"]
+- !private ["s8HashableP", "min"]
+- !private ["s8HashableP", "numberOfItems"]
+- !private ["s8HashableP", "numberOfSections"]
+- !private ["s8HashableP", "pow"]
+- !private ["s8HashableP", "prepare"]
+- !private ["s8HashableP", "row"]
+- !private ["s8HashableP", "scale"]
+- !private ["s8HashableP", "size"]
+- !private ["s8HashableP", "spacing"]
+- !private ["s8HashableP", "transform"]
+- !private ["s8HashableP", "zIndex"]
+- ["s8HashableP", ""]
+- !private ["10Foundation9IndexPathV", "init"]
+- !private ["10Foundation9IndexPathV", "row"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "row"]
+- !private ["So8NSCodingP", "CGAffineTransform"]
+- !private ["So8NSCodingP", "CGFloat"]
+- !private ["So8NSCodingP", "CGPoint"]
+- ["So8NSCodingP", "CGSize"]
+- !private ["So8NSCodingP", "IndexPath"]
+- !private ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "UICollectionViewLayoutAttributes"]
+- !private ["So8NSCodingP", "assert"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "collectionView"]
+- !private ["So8NSCodingP", "computeLayoutAttributesForItem"]
+- !private ["So8NSCodingP", "contentOffset"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "invalidateLayout"]
+- !private ["So8NSCodingP", "itemSize"]
+- !private ["So8NSCodingP", "max"]
+- !private ["So8NSCodingP", "maximumVisibleItems"]
+- !private ["So8NSCodingP", "min"]
+- !private ["So8NSCodingP", "numberOfItems"]
+- !private ["So8NSCodingP", "numberOfSections"]
+- !private ["So8NSCodingP", "pow"]
+- !private ["So8NSCodingP", "prepare"]
+- !private ["So8NSCodingP", "scale"]
+- !private ["So8NSCodingP", "spacing"]
+- !private ["So8NSCodingP", "transform"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "alpha"]
+- !private ["So9NSCopyingP", "center"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "size"]
+- !private ["So9NSCopyingP", "transform"]
+- !private ["So9NSCopyingP", "zIndex"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "CGAffineTransform"]
+- ["So8NSObjectC", "CGFloat"]
+- !private ["So8NSObjectC", "CGPoint"]
+- ["So8NSObjectC", "CGRect"]
+- ["So8NSObjectC", "CGSize"]
+- ["So8NSObjectC", "IndexPath"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "UICollectionView"]
+- ["So8NSObjectC", "UICollectionViewLayoutAttributes"]
+- !private ["So8NSObjectC", "alpha"]
+- !private ["So8NSObjectC", "assert"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "center"]
+- ["So8NSObjectC", "collectionView"]
+- ["So8NSObjectC", "collectionViewContentSize"]
+- !private ["So8NSObjectC", "computeLayoutAttributesForItem"]
+- !private ["So8NSObjectC", "contentOffset"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "invalidateLayout"]
+- ["So8NSObjectC", "itemSize"]
+- ["So8NSObjectC", "layoutAttributesForElements"]
+- ["So8NSObjectC", "layoutAttributesForItem"]
+- !private ["So8NSObjectC", "max"]
+- ["So8NSObjectC", "maximumVisibleItems"]
+- !private ["So8NSObjectC", "min"]
+- !private ["So8NSObjectC", "numberOfItems"]
+- !private ["So8NSObjectC", "numberOfSections"]
+- !private ["So8NSObjectC", "pow"]
+- ["So8NSObjectC", "prepare"]
+- !private ["So8NSObjectC", "scale"]
+- ["So8NSObjectC", "shouldInvalidateLayout"]
+- !private ["So8NSObjectC", "size"]
+- ["So8NSObjectC", "spacing"]
+- !private ["So8NSObjectC", "transform"]
+- !private ["So8NSObjectC", "zIndex"]
+- !private ["So16NSObjectProtocolP", "CGAffineTransform"]
+- !private ["So16NSObjectProtocolP", "CGFloat"]
+- !private ["So16NSObjectProtocolP", "CGPoint"]
+- ["So16NSObjectProtocolP", "CGSize"]
+- !private ["So16NSObjectProtocolP", "IndexPath"]
+- !private ["So16NSObjectProtocolP", "Int"]
+- !private ["So16NSObjectProtocolP", "UICollectionViewLayoutAttributes"]
+- !private ["So16NSObjectProtocolP", "alpha"]
+- !private ["So16NSObjectProtocolP", "assert"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "center"]
+- !private ["So16NSObjectProtocolP", "collectionView"]
+- !private ["So16NSObjectProtocolP", "computeLayoutAttributesForItem"]
+- !private ["So16NSObjectProtocolP", "contentOffset"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "invalidateLayout"]
+- !private ["So16NSObjectProtocolP", "itemSize"]
+- !private ["So16NSObjectProtocolP", "max"]
+- !private ["So16NSObjectProtocolP", "maximumVisibleItems"]
+- !private ["So16NSObjectProtocolP", "min"]
+- !private ["So16NSObjectProtocolP", "numberOfItems"]
+- !private ["So16NSObjectProtocolP", "numberOfSections"]
+- !private ["So16NSObjectProtocolP", "pow"]
+- !private ["So16NSObjectProtocolP", "prepare"]
+- !private ["So16NSObjectProtocolP", "scale"]
+- !private ["So16NSObjectProtocolP", "size"]
+- !private ["So16NSObjectProtocolP", "spacing"]
+- !private ["So16NSObjectProtocolP", "transform"]
+- !private ["So16NSObjectProtocolP", "zIndex"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s7NumericP", "init"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "map"]
+- !private ["s22RandomAccessCollectionP", "row"]
+- !private ["s15RangeExpressionP", "map"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "row"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "map"]
+- !private ["s8SequenceP", "row"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So29UIAccessibilityIdentificationP", "contentOffset"]
+- !private ["So29UIAccessibilityIdentificationP", "numberOfItems"]
+- !private ["So29UIAccessibilityIdentificationP", "numberOfSections"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So12UIAppearanceP", "contentOffset"]
+- !private ["So12UIAppearanceP", "numberOfItems"]
+- !private ["So12UIAppearanceP", "numberOfSections"]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "contentOffset"]
+- !private ["So21UIAppearanceContainerP", "numberOfItems"]
+- !private ["So21UIAppearanceContainerP", "numberOfSections"]
+- !private ["So16UICollectionViewC", "bounds"]
+- !private ["So16UICollectionViewC", "contentOffset"]
+- !private ["So16UICollectionViewC", "numberOfItems"]
+- !private ["So16UICollectionViewC", "numberOfSections"]
+- ["So22UICollectionViewLayoutC", "Bool"]
+- !private ["So22UICollectionViewLayoutC", "CGAffineTransform"]
+- ["So22UICollectionViewLayoutC", "CGFloat"]
+- !private ["So22UICollectionViewLayoutC", "CGPoint"]
+- ["So22UICollectionViewLayoutC", "CGRect"]
+- ["So22UICollectionViewLayoutC", "CGSize"]
+- ["So22UICollectionViewLayoutC", "IndexPath"]
+- ["So22UICollectionViewLayoutC", "Int"]
+- ["So22UICollectionViewLayoutC", "UICollectionView"]
+- ["So22UICollectionViewLayoutC", "UICollectionViewLayoutAttributes"]
+- !private ["So22UICollectionViewLayoutC", "assert"]
+- ["So22UICollectionViewLayoutC", "collectionView"]
+- ["So22UICollectionViewLayoutC", "collectionViewContentSize"]
+- !private ["So22UICollectionViewLayoutC", "computeLayoutAttributesForItem"]
+- ["So22UICollectionViewLayoutC", "init"]
+- !private ["So22UICollectionViewLayoutC", "invalidateLayout"]
+- ["So22UICollectionViewLayoutC", "itemSize"]
+- ["So22UICollectionViewLayoutC", "layoutAttributesForElements"]
+- ["So22UICollectionViewLayoutC", "layoutAttributesForItem"]
+- !private ["So22UICollectionViewLayoutC", "max"]
+- ["So22UICollectionViewLayoutC", "maximumVisibleItems"]
+- !private ["So22UICollectionViewLayoutC", "min"]
+- !private ["So22UICollectionViewLayoutC", "pow"]
+- ["So22UICollectionViewLayoutC", "prepare"]
+- !private ["So22UICollectionViewLayoutC", "scale"]
+- ["So22UICollectionViewLayoutC", "shouldInvalidateLayout"]
+- ["So22UICollectionViewLayoutC", "spacing"]
+- !private ["So22UICollectionViewLayoutC", "transform"]
+- ["So22UICollectionViewLayoutC", ""]
+- !private ["So32UICollectionViewLayoutAttributesC", "alpha"]
+- !private ["So32UICollectionViewLayoutAttributesC", "center"]
+- !private ["So32UICollectionViewLayoutAttributesC", "init"]
+- !private ["So32UICollectionViewLayoutAttributesC", "size"]
+- !private ["So32UICollectionViewLayoutAttributesC", "transform"]
+- !private ["So32UICollectionViewLayoutAttributesC", "zIndex"]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "contentOffset"]
+- !private ["So17UICoordinateSpaceP", "numberOfItems"]
+- !private ["So17UICoordinateSpaceP", "numberOfSections"]
+- !private ["So23UIDataSourceTranslatingP", "bounds"]
+- !private ["So23UIDataSourceTranslatingP", "contentOffset"]
+- !private ["So23UIDataSourceTranslatingP", "numberOfItems"]
+- !private ["So23UIDataSourceTranslatingP", "numberOfSections"]
+- !private ["So13UIDynamicItemP", "alpha"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So13UIDynamicItemP", "center"]
+- !private ["So13UIDynamicItemP", "contentOffset"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "numberOfItems"]
+- !private ["So13UIDynamicItemP", "numberOfSections"]
+- !private ["So13UIDynamicItemP", "size"]
+- !private ["So13UIDynamicItemP", "transform"]
+- !private ["So13UIDynamicItemP", "zIndex"]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "contentOffset"]
+- !private ["So18UIFocusEnvironmentP", "numberOfItems"]
+- !private ["So18UIFocusEnvironmentP", "numberOfSections"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So11UIFocusItemP", "contentOffset"]
+- !private ["So11UIFocusItemP", "numberOfItems"]
+- !private ["So11UIFocusItemP", "numberOfSections"]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentOffset"]
+- !private ["So30UIPasteConfigurationSupportingP", "numberOfItems"]
+- !private ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
+- !private ["So11UIResponderC", "bounds"]
+- !private ["So11UIResponderC", "contentOffset"]
+- !private ["So11UIResponderC", "numberOfItems"]
+- !private ["So11UIResponderC", "numberOfSections"]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "contentOffset"]
+- !private ["So30UIResponderStandardEditActionsP", "numberOfItems"]
+- !private ["So30UIResponderStandardEditActionsP", "numberOfSections"]
+- !private ["So12UIScrollViewC", "bounds"]
+- !private ["So12UIScrollViewC", "contentOffset"]
+- !private ["So12UIScrollViewC", "numberOfItems"]
+- !private ["So12UIScrollViewC", "numberOfSections"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "bounds"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "contentOffset"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "numberOfItems"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "numberOfSections"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "contentOffset"]
+- !private ["So18UITraitEnvironmentP", "numberOfItems"]
+- !private ["So18UITraitEnvironmentP", "numberOfSections"]
+- !private ["So6UIViewC", "bounds"]
+- !private ["So6UIViewC", "contentOffset"]
+- !private ["So6UIViewC", "numberOfItems"]
+- !private ["So6UIViewC", "numberOfSections"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "map"]
+- !private ["s23_BidirectionalIndexableP", "row"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentOffset"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "numberOfItems"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "numberOfSections"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "map"]
+- !private ["s10_IndexableP", "row"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "map"]
+- !private ["s14_IndexableBaseP", "row"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGAffineTransform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "IndexPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UICollectionViewLayoutAttributes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "alpha"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "assert"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "collectionView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "computeLayoutAttributesForItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentOffset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "invalidateLayout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "itemSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "max"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "maximumVisibleItems"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "min"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numberOfItems"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pow"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "spacing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "transform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "zIndex"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s17_MutableIndexableP", "init"]
+- !private ["s17_MutableIndexableP", "row"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "midY"]
+- !private ["s21_ObjectiveCBridgeableP", "row"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "map"]
+- !private ["s22_RandomAccessIndexableP", "row"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- !private "SC17CGAffineTransformV"
+- !private "12CoreGraphics7CGFloatV"
+- !private "SC7CGPointV"
+- !private "SC6CGRectV"
+- "SC6CGSizeV"
+- "s7CVarArgP"
+- "11SpeakMarvel25CardsCollectionViewLayoutC"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s14CountableRangeV"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s13FloatingPointP"
+- "s8HashableP"
+- !private "10Foundation9IndexPathV"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s7NumericP"
+- !private "s22RandomAccessCollectionP"
+- !private "s15RangeExpressionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So16UICollectionViewC"
+- "So22UICollectionViewLayoutC"
+- !private "So32UICollectionViewLayoutAttributesC"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "b69ce3d559f89d9fa4829f7227700f62"

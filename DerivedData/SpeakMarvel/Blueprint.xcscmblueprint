@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BF72DEF10D0FE721A6757D38A7636A4BBE0B85A5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BF72DEF10D0FE721A6757D38A7636A4BBE0B85A5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "83628A48-5FEB-4D22-90A8-D1D2BFE77E6F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BF72DEF10D0FE721A6757D38A7636A4BBE0B85A5" : "TreeHacks2018\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SpeakMarvel",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SpeakMarvel.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/its-akshara\/TreeHacks2018.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BF72DEF10D0FE721A6757D38A7636A4BBE0B85A5"
+    }
+  ]
+}

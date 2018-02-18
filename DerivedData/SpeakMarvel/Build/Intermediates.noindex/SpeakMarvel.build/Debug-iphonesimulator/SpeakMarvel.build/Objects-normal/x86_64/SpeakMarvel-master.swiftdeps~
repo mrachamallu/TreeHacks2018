@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "34e50fd4fb014dc2540ed0760996bd88"
+build_time: [1518855470, 51733000]
+inputs:
+  "/Users/akshara/Projects/TreeHacks2018/TreeHacks2018/SpeakMarvel/Models/Player.swift": [1518854247, 0]
+  "/Users/akshara/Projects/TreeHacks2018/TreeHacks2018/SpeakMarvel/ViewController.swift": [1518848326, 0]
+  "/Users/akshara/Projects/TreeHacks2018/TreeHacks2018/SpeakMarvel/Models/Quote.swift": [1518855467, 0]
+  "/Users/akshara/Projects/TreeHacks2018/TreeHacks2018/SpeakMarvel/AppDelegate.swift": [1518848326, 0]

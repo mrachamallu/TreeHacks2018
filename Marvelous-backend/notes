@@ -1,0 +1,126 @@
+starting-account-qmybhcqaqnnh
+
+
+quote_1 = {
+  quote: "No",
+  who: "Rosa Parks",
+  image: "pics.com/rp.png"
+}
+
+
+
+Marvel API
+public:
+c85fb470f52c2f0fadc9cf7b2383414d
+private:
+da0da9c53718269ad9056277e226a9937c0c23e9
+
+
+marvel wrapper response format:
+{
+  data: [
+    {
+      id: 43495,
+      digitalId: 28150,
+      ...
+    },
+    {
+      id: 42566,
+      digitalId: 0,
+      ...
+    }
+  ],
+  meta: {
+    offset: 0,
+    limit: 20,
+    total: 2576,
+    count: 20
+  }
+}
+{
+  "available": 93,
+  "collectionURI": "http://gateway.marvel.com/v1/public/events/116/characters",
+  "items": [
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010370",
+      "name": "Alpha Flight"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009152",
+      "name": "Ancient One"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009156",
+      "name": "Apocalypse"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009159",
+      "name": "Archangel"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009165",
+      "name": "Avengers"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009168",
+      "name": "Banshee"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009175",
+      "name": "Beast"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009179",
+      "name": "Beetle (Abner Jenkins)"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009186",
+      "name": "Black Knight (Sir Percy of Scandia)"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009189",
+      "name": "Black Widow"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010366",
+      "name": "Boom Boom"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009213",
+      "name": "Bushwacker"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009220",
+      "name": "Captain America"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010338",
+      "name": "Captain Marvel (Carol Danvers)"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011027",
+      "name": "Captain Universe"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009239",
+      "name": "Clea"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009243",
+      "name": "Colossus"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009245",
+      "name": "Constrictor"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+      "name": "Cyclops"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009453",
+      "name": "Dani Moonstar"
+    }
+  ],
+  "returned": 20
+}
