@@ -17,7 +17,6 @@ import SwiftyJSON
 class CardViewController: UIViewController {
     
     @IBOutlet var swipeView: SwipeView!
-    @IBOutlet weak var displayQuote: UILabel!
  
     private var disposableBag = DisposeBag() // for error handling later
     
@@ -43,8 +42,10 @@ class CardViewController: UIViewController {
                             self.swipeView.setup(options: swipeOptions)
                             
                             for i in 1...10 {
-                                if let title = json[i]["name"].string{
-                                    var exampleData = ExampleData(title: title)
+                                let title = json[i]["quote"].string
+                                //let image = json[i]["image"].string
+                                if ((title != nil) ) {
+                                    let exampleData = ExampleData(title: title!)
                                     self.swipeView.addCard(exampleData)
                                 }
                                 
@@ -72,15 +73,18 @@ class CardViewController: UIViewController {
 class ExampleData: SwipableData {
     
     var title: String
+    //var image: String
     
     func getView(with frame: CGRect) -> SwipableView {
         let view = Card(frame: frame)
-        view.setData(self, value: self.title)
+        view.setData(self, titleVal: self.title)
+        //view.setData(self, imageVal: self.image)
         return view
     }
     
     init(title: String) {
         self.title = title
+        //self.image = image
     }
 }
 

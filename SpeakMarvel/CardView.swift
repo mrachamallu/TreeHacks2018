@@ -13,19 +13,24 @@ import RxSwift
 
 class Card: SwipableView {
     
-    func setData(_ data: SwipableData, value: String) {
+    func setData(_ data: SwipableData, titleVal: String) {
         super.setData(data)
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: frame.width - 100, height: 200))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = #imageLiteral(resourceName: "spiderButton")
+        imageView.center = center
+        addSubview(imageView)
         
         let title = UILabel(frame: CGRect(x:0, y:0, width: frame.width - 100, height: 100))
         title.center = CGPoint(x: center.x, y: center.y + 50)
-        title.text = value
+        title.text = titleVal
         title.textColor = .kicksortPink
         title.textAlignment = .center
         title.font = UIFont(name: "HarabaraMaisBold-HarabaraMaisBold", size: 30)
         addSubview(title)
         
     }
-    
     
 
 }

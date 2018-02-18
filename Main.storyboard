@@ -50,13 +50,6 @@
                                     <constraint firstAttribute="width" constant="133" id="RfH-6W-Niz"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v06-v0-LPC">
-                                <rect key="frame" x="166" y="580" width="48" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzW-hB-E1K">
                                 <rect key="frame" x="204" y="52" width="133" height="135"/>
                                 <state key="normal" image="spiderButton"/>
@@ -64,6 +57,14 @@
                                     <action selector="spiderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIG-b5-tkC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v06-v0-LPC">
+                                <rect key="frame" x="99" y="570" width="176" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96238523721694946" green="0.70772498846054077" blue="0.22782307863235474" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -101,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="105"/>
+            <point key="canvasLocation" x="173.59999999999999" y="104.7976011994003"/>
         </scene>
         <!--Card View Controller-->
         <scene sceneID="6rx-gM-qj2">
@@ -111,9 +112,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BwD-ZA-j6V">
-                                <rect key="frame" x="50" y="98" width="274" height="268"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZS-Oy-uSb">
                                 <rect key="frame" x="0.0" y="533" width="375" height="134"/>
                                 <subviews>
@@ -128,35 +126,18 @@
                                     <constraint firstItem="4pZ-2k-vTb" firstAttribute="centerY" secondItem="AZS-Oy-uSb" secondAttribute="centerY" id="iQb-te-tcb"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTo-Qo-34m" userLabel="Quote">
-                                <rect key="frame" x="50" y="391" width="274" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="ii8-Tz-K6v"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AZS-Oy-uSb" firstAttribute="trailing" secondItem="JXx-b2-eq7" secondAttribute="trailing" id="1Ar-1k-jTc"/>
                             <constraint firstItem="AZS-Oy-uSb" firstAttribute="height" secondItem="n0P-nl-ZWw" secondAttribute="height" multiplier="0.2" id="Aj0-J5-nAg"/>
                             <constraint firstItem="AZS-Oy-uSb" firstAttribute="leading" secondItem="JXx-b2-eq7" secondAttribute="leading" id="L2j-YN-iNY"/>
-                            <constraint firstItem="BwD-ZA-j6V" firstAttribute="top" secondItem="JXx-b2-eq7" secondAttribute="top" constant="34" id="U1j-wE-6CL"/>
-                            <constraint firstItem="gTo-Qo-34m" firstAttribute="trailing" secondItem="BwD-ZA-j6V" secondAttribute="trailing" id="kN1-Vk-clW"/>
-                            <constraint firstItem="gTo-Qo-34m" firstAttribute="leading" secondItem="JXx-b2-eq7" secondAttribute="leading" constant="50" id="qT7-PE-Zfa"/>
-                            <constraint firstItem="gTo-Qo-34m" firstAttribute="leading" secondItem="BwD-ZA-j6V" secondAttribute="leading" id="qh2-Dt-wFF"/>
-                            <constraint firstItem="gTo-Qo-34m" firstAttribute="centerX" secondItem="AZS-Oy-uSb" secondAttribute="centerX" id="sbU-Wk-lIc"/>
-                            <constraint firstItem="gTo-Qo-34m" firstAttribute="top" secondItem="BwD-ZA-j6V" secondAttribute="bottom" constant="25" id="uoX-R7-9vX"/>
                             <constraint firstItem="AZS-Oy-uSb" firstAttribute="bottom" secondItem="JXx-b2-eq7" secondAttribute="bottom" id="xq1-ae-BMe"/>
-                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="top" secondItem="gTo-Qo-34m" secondAttribute="bottom" constant="54" id="z0x-AG-ckk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JXx-b2-eq7"/>
                     </view>
                     <navigationItem key="navigationItem" id="mTB-pU-b56"/>
                     <connections>
-                        <outlet property="displayQuote" destination="gTo-Qo-34m" id="Ztv-3a-SEI"/>
                         <outlet property="swipeView" destination="n0P-nl-ZWw" id="gNR-Dq-xvI"/>
                     </connections>
                 </viewController>
