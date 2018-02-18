@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2D7CF37448D04422C00AAC22 /* Pods_SpeakMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960D169B4E3909DA61A9FB1 /* Pods_SpeakMarvel.framework */; };
+		662CBBB620394AC600715A3B /* HoundifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662CBBB520394AC600715A3B /* HoundifyView.swift */; };
 		662EBF412037FE29007B4CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EBF402037FE29007B4CD2 /* AppDelegate.swift */; };
 		662EBF432037FE29007B4CD2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EBF422037FE29007B4CD2 /* MainViewController.swift */; };
 		662EBF482037FE29007B4CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662EBF472037FE29007B4CD2 /* Assets.xcassets */; };
 		662EBF4B2037FE29007B4CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662EBF492037FE29007B4CD2 /* LaunchScreen.storyboard */; };
+		667BF5952039679400B4053F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BF5942039679300B4053F /* CardView.swift */; };
 		668DEB4C20388BFA00095ADD /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEB4B20388BFA00095ADD /* CardsViewController.swift */; };
-		66A988AF20391BCA00E6FC45 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A988AE20391BCA00E6FC45 /* CardView.swift */; };
 		66A988B1203920CF00E6FC45 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A988B0203920CF00E6FC45 /* CardViewController.swift */; };
 		66A988B3203920FB00E6FC45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A988B2203920FB00E6FC45 /* Main.storyboard */; };
 		66A988B72039242400E6FC45 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A988B62039242400E6FC45 /* ButtonViewController.swift */; };
@@ -25,14 +26,15 @@
 /* Begin PBXFileReference section */
 		2960D169B4E3909DA61A9FB1 /* Pods_SpeakMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CBB50E1E262EF094F9CD6C /* Pods-SpeakMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakMarvel.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakMarvel/Pods-SpeakMarvel.release.xcconfig"; sourceTree = "<group>"; };
+		662CBBB520394AC600715A3B /* HoundifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoundifyView.swift; sourceTree = "<group>"; };
 		662EBF3D2037FE29007B4CD2 /* SpeakMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662EBF402037FE29007B4CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		662EBF422037FE29007B4CD2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		662EBF472037FE29007B4CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		662EBF4A2037FE29007B4CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		662EBF4C2037FE29007B4CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667BF5942039679300B4053F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		668DEB4B20388BFA00095ADD /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
-		66A988AE20391BCA00E6FC45 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../../Library/Containers/com.apple.mail/Data/Library/Mail Downloads/0394C265-6CBC-4BAF-B2DF-37030E59B29A/CardView.swift"; sourceTree = "<group>"; };
 		66A988B0203920CF00E6FC45 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = SOURCE_ROOT; };
 		66A988B2203920FB00E6FC45 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
 		66A988B62039242400E6FC45 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
@@ -78,8 +80,9 @@
 				846043EE20381B85008DC98A /* Controllers */,
 				846043E620381659008DC98A /* Models */,
 				662EBF402037FE29007B4CD2 /* AppDelegate.swift */,
-				66A988AE20391BCA00E6FC45 /* CardView.swift */,
+				667BF5942039679300B4053F /* CardView.swift */,
 				66A988B2203920FB00E6FC45 /* Main.storyboard */,
+				662CBBB520394AC600715A3B /* HoundifyView.swift */,
 				66A988B0203920CF00E6FC45 /* CardViewController.swift */,
 				668DEB4B20388BFA00095ADD /* CardsViewController.swift */,
 				662EBF472037FE29007B4CD2 /* Assets.xcassets */,
@@ -270,12 +273,13 @@
 			files = (
 				846043EA20381699008DC98A /* Player.swift in Sources */,
 				66A988B72039242400E6FC45 /* ButtonViewController.swift in Sources */,
-				66A988AF20391BCA00E6FC45 /* CardView.swift in Sources */,
 				668DEB4C20388BFA00095ADD /* CardsViewController.swift in Sources */,
 				662EBF432037FE29007B4CD2 /* MainViewController.swift in Sources */,
 				846043EC203819C9008DC98A /* CardsCollectionViewLayout.swift in Sources */,
 				846043E82038166F008DC98A /* Quote.swift in Sources */,
 				66A988B1203920CF00E6FC45 /* CardViewController.swift in Sources */,
+				662CBBB620394AC600715A3B /* HoundifyView.swift in Sources */,
+				667BF5952039679400B4053F /* CardView.swift in Sources */,
 				662EBF412037FE29007B4CD2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,13 +23,15 @@ class CardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        Alamofire.request("http://marvelous-195508.appspot.com/cards", method: .get).validate().responseJSON { response in
+        let parameters: Parameters = [
+            "1009610": "10"
+        ]
+        Alamofire.request("http://marvelous-195508.appspot.com/cards", method: .get, parameters : parameters).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                self.displayQuote.text = json["quote"].string
-                print("This is the quote: \(json["quote"] )")
+                self.displayQuote.text = json["name"].string
+                print("This is the name: \(json["name"] )")
                 print("JSON: \(json)")
             case .failure(let error):
                 print(error)

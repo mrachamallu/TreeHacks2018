@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -121,8 +122,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZS-Oy-uSb">
+                                <rect key="frame" x="0.0" y="533" width="375" height="134"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pZ-2k-vTb">
+                                        <rect key="frame" x="169" y="49" width="37" height="37"/>
+                                        <state key="normal" image="microphone"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.62714070081710815" green="0.85200673341751099" blue="0.9204450249671936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4pZ-2k-vTb" firstAttribute="centerX" secondItem="AZS-Oy-uSb" secondAttribute="centerX" id="W0Z-bE-54b"/>
+                                    <constraint firstItem="4pZ-2k-vTb" firstAttribute="centerY" secondItem="AZS-Oy-uSb" secondAttribute="centerY" id="iQb-te-tcb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="trailing" secondItem="JXx-b2-eq7" secondAttribute="trailing" id="1Ar-1k-jTc"/>
+                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="height" secondItem="n0P-nl-ZWw" secondAttribute="height" multiplier="0.2" id="Aj0-J5-nAg"/>
+                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="leading" secondItem="JXx-b2-eq7" secondAttribute="leading" id="L2j-YN-iNY"/>
+                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="bottom" secondItem="JXx-b2-eq7" secondAttribute="bottom" id="xq1-ae-BMe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JXx-b2-eq7"/>
                     </view>
                     <navigationItem key="navigationItem" id="mTB-pU-b56"/>
@@ -246,6 +267,7 @@ Hot Phrase</string>
         <image name="ic-blk-tabbar-houndify-mic" width="16" height="16"/>
         <image name="ic-hound-small" width="16" height="16"/>
         <image name="ironManButton" width="112" height="113"/>
+        <image name="microphone" width="37" height="37"/>
         <image name="spiderButton" width="115" height="115"/>
         <image name="thorButton" width="113" height="112"/>
         <image name="wolverineButton" width="111" height="112"/>
