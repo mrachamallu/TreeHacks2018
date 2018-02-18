@@ -9,16 +9,32 @@
 import UIKit
 import KSSwipeStack
 import RxSwift
+import Alamofire
+import SwiftyJSON
+
 
 
 class CardViewController: UIViewController {
     
     @IBOutlet var swipeView: SwipeView!
+    @IBOutlet weak var displayQuote: UILabel!
  
     private var disposableBag = DisposeBag() // for error handling later
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Alamofire.request("http://marvelous-195508.appspot.com/cards", method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                self.displayQuote.text = json["quote"].string
+                print("This is the quote: \(json["quote"] )")
+                print("JSON: \(json)")
+            case .failure(let error):
+                print(error)
+            }
+        }
         
         // optional customization
         var swipeOptions = SwipeOptions()
