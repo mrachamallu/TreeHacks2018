@@ -7,72 +7,54 @@
 //
 
 import UIKit
-import CardsLayout
+import KSSwipeStack
+import RxSwift
 
-class CardViewController: UIViewController, UICollectionViewDelegate {
+
+class CardViewController: UIViewController {
     
-    @IBOutlet weak var cardCollectionView: UICollectionView!
+    @IBOutlet var swipeView: SwipeView!
+ 
+    private var disposableBag = DisposeBag() // for error handling later
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cardCollectionView.collectionViewLayout = CardsCollectionViewLayout()
-        cardCollectionView.dataSource = self
-        cardCollectionView.delegate = self
-        cardCollectionView.isPagingEnabled = true
-        cardCollectionView.showsHorizontalScrollIndicator = false
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-}
-
-var colors: [UIColor] = [
-    UIColor(red: 237, green: 37, blue: 78),
-    UIColor(red: 249, green: 220, blue: 92),
-    UIColor(red: 194, green: 234, blue: 189),
-    UIColor(red: 1,   green: 25,  blue: 54),
-    UIColor(red: 255, green: 184, blue: 209)
-]
-
-// CONFORM. TO. THE PROTOCOL!
-extension CardViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
-    // Tell the collection view how MANY cards to show
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    
-    // Tell the collectionview how to display the cards
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCellReuseIdentifier", for: indexPath)
-        cell.layer.cornerRadius = 7.0
-        cell.backgroundColor = colors[indexPath.row]
         
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemWidth = collectionView.bounds.width
-        let itemHeight = collectionView.bounds.height
-        return CGSize(width: itemWidth, height: itemHeight)
+        // optional customization
+        var swipeOptions = SwipeOptions()
+        swipeOptions.allowVerticalSwipes = true
+        swipeView.setup(options: swipeOptions)
+        
+        for _ in 1...15 {
+            swipeView.addCard(ExampleData())
+        }
+        
+        // even more optional, observe swipe view events
+        swipeView.getSwipes().subscribe(onNext: { swipe in
+            print("RX SWIPE EVENT: \(swipe.direction)")
+        }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposableBag)
+        
+        swipeView.needsRefill().subscribe(onNext: { swipe in
+            print("RX REFILL EVENT")
+        }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposableBag)
+        
     }
 }
 
 
-// because we clean like dis
-extension UIColor {
-    convenience init(red: Int, green: Int, blue: Int) {
-        self.init(red: CGFloat(red)/255,
-                  green: CGFloat(green)/255,
-                  blue: CGFloat(blue)/255,
-                  alpha: 1.0)
+
+class ExampleData: SwipableData {
+    func getView(with frame: CGRect) -> SwipableView {
+        let view = Card(frame: frame)
+        view.setData(self)
+        return view
     }
 }
+
+
+
+
+
 
 
 

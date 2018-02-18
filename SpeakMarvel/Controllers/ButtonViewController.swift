@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import UIKit
+
+class ButtonViewController: UIViewController {
+    @IBAction func spiderButton(_ sender: Any) {
+        performSegue(withIdentifier: "toCardViewController", sender: nil)
+    }
+    
+    
+    override func viewDidLoad() {
+        print("")
+    }
+    
+    
+}
