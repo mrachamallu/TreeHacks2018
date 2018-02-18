@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Menlo.ttc">
+            <string>Menlo-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Button View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -89,7 +95,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="VsQ-hc-aFg" kind="presentation" identifier="toCardViewController" id="nvU-6T-KNi"/>
+                        <segue destination="fQi-vx-SRt" kind="presentation" identifier="toCardViewController" id="nvU-6T-KNi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -103,22 +109,141 @@
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="n0P-nl-ZWw" customClass="SwipeView" customModule="KSSwipeStack">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BwD-ZA-j6V">
+                                <rect key="frame" x="50" y="98" width="274" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJT-l8-cu1">
+                                <rect key="frame" x="95" y="428" width="184" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JXx-b2-eq7"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mTB-pU-b56"/>
                     <connections>
                         <outlet property="swipeView" destination="n0P-nl-ZWw" id="gNR-Dq-xvI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kx-QU-gM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="105"/>
+            <point key="canvasLocation" x="1813.5999999999999" y="103.89805097451276"/>
+        </scene>
+        <!--Houndify UI-->
+        <scene sceneID="4Ih-A7-cNk">
+            <objects>
+                <viewController id="XUd-cp-jfN" customClass="HoundifyViewController" customModule="HoundifySDK_Sample_App__Swift_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kp3-4K-XxC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khK-tr-6Pw" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlq-h9-gQQ" userLabel="Status  Label">
+                                <rect key="frame" x="53" y="30" width="296" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The Houndify API is the simplest way to add voice search to your app. It provides a UI and manages audio for you." translatesAutoresizingMaskIntoConstraints="NO" id="m1E-2A-hXP">
+                                <rect key="frame" x="10" y="74" width="355" height="531"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-hound-small" translatesAutoresizingMaskIntoConstraints="NO" id="dz0-6R-w66">
+                                <rect key="frame" x="10" y="26" width="16" height="16"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwa-IU-K0d">
+                                <rect key="frame" x="165.5" y="615" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="5dc-fx-G45"/>
+                                    <constraint firstAttribute="height" constant="44" id="trR-gQ-mmq"/>
+                                </constraints>
+                                <state key="normal" image="ic-blk-tabbar-houndify-mic"/>
+                                <connections>
+                                    <action selector="activateVoiceSearch:" destination="XUd-cp-jfN" eventType="touchUpInside" id="pIL-9t-LYH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Kre-J7-MZg">
+                                <rect key="frame" x="56.5" y="613" width="77" height="48"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal">
+                                    <string key="title">Listen for
+Hot Phrase</string>
+                                </state>
+                                <connections>
+                                    <action selector="beginListeningButtonPressed:" destination="XUd-cp-jfN" eventType="touchUpInside" id="iJl-9D-hd8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="khK-tr-6Pw" firstAttribute="leading" secondItem="bTs-Zf-bKT" secondAttribute="leading" id="3d1-nK-OJl"/>
+                            <constraint firstItem="bTs-Zf-bKT" firstAttribute="trailing" secondItem="khK-tr-6Pw" secondAttribute="trailing" id="8xR-qF-gxg"/>
+                            <constraint firstItem="dz0-6R-w66" firstAttribute="leading" secondItem="bTs-Zf-bKT" secondAttribute="leading" constant="10" id="9uK-gR-oLf"/>
+                            <constraint firstItem="m1E-2A-hXP" firstAttribute="leading" secondItem="bTs-Zf-bKT" secondAttribute="leading" constant="10" id="C43-Tu-Jrb"/>
+                            <constraint firstItem="Jwa-IU-K0d" firstAttribute="leading" secondItem="Kre-J7-MZg" secondAttribute="trailing" constant="32" id="DtS-q7-g1C"/>
+                            <constraint firstItem="khK-tr-6Pw" firstAttribute="top" secondItem="Kp3-4K-XxC" secondAttribute="top" id="PWc-Rx-kdC"/>
+                            <constraint firstItem="Nlq-h9-gQQ" firstAttribute="top" secondItem="bTs-Zf-bKT" secondAttribute="top" constant="10" id="WoQ-x3-mMS"/>
+                            <constraint firstItem="khK-tr-6Pw" firstAttribute="bottom" secondItem="bTs-Zf-bKT" secondAttribute="top" constant="44" id="cQ1-jN-WPe"/>
+                            <constraint firstItem="Jwa-IU-K0d" firstAttribute="top" secondItem="m1E-2A-hXP" secondAttribute="bottom" constant="10" id="gFy-ao-Taj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nlq-h9-gQQ" secondAttribute="trailing" constant="10" id="h0e-Fv-0ib"/>
+                            <constraint firstItem="bTs-Zf-bKT" firstAttribute="bottom" secondItem="Jwa-IU-K0d" secondAttribute="bottom" constant="8" id="hhU-em-29c"/>
+                            <constraint firstItem="dz0-6R-w66" firstAttribute="top" secondItem="bTs-Zf-bKT" secondAttribute="top" constant="6" id="m7j-57-hGh"/>
+                            <constraint firstItem="Jwa-IU-K0d" firstAttribute="centerY" secondItem="Kre-J7-MZg" secondAttribute="centerY" id="npl-WY-fTh"/>
+                            <constraint firstItem="bTs-Zf-bKT" firstAttribute="trailing" secondItem="m1E-2A-hXP" secondAttribute="trailing" constant="10" id="o5U-GT-jHc"/>
+                            <constraint firstItem="m1E-2A-hXP" firstAttribute="top" secondItem="khK-tr-6Pw" secondAttribute="bottom" constant="10" id="t1T-iB-dWW"/>
+                            <constraint firstItem="Jwa-IU-K0d" firstAttribute="centerX" secondItem="bTs-Zf-bKT" secondAttribute="centerX" id="u2l-73-xOn"/>
+                            <constraint firstItem="Nlq-h9-gQQ" firstAttribute="leading" secondItem="Kp3-4K-XxC" secondAttribute="leadingMargin" constant="37" id="xhE-6m-Id3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bTs-Zf-bKT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Houndify UI" image="first" id="zeE-hJ-Ood"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="houndifyButton" destination="Jwa-IU-K0d" id="qNI-RH-zeA"/>
+                        <outlet property="listenButton" destination="Kre-J7-MZg" id="oMO-BF-Js6"/>
+                        <outlet property="responseTextView" destination="m1E-2A-hXP" id="nB1-T0-40b"/>
+                        <outlet property="statusLabel" destination="Nlq-h9-gQQ" id="omq-z7-nHz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDR-Z4-pR0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1919" y="953"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pHU-LE-27a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fQi-vx-SRt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ayP-8t-Rwt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VsQ-hc-aFg" kind="relationship" relationship="rootViewController" id="mEA-5K-y4T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pW-rr-ked" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969.60000000000002" y="104.34782608695653"/>
         </scene>
     </scenes>
     <resources>
         <image name="AppBackground" width="320" height="480"/>
         <image name="capButton" width="115" height="114"/>
+        <image name="first" width="16" height="16"/>
         <image name="generalMarvelButton" width="111" height="111"/>
+        <image name="ic-blk-tabbar-houndify-mic" width="16" height="16"/>
+        <image name="ic-hound-small" width="16" height="16"/>
         <image name="ironManButton" width="112" height="113"/>
         <image name="spiderButton" width="115" height="115"/>
         <image name="thorButton" width="113" height="112"/>
