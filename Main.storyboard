@@ -17,6 +17,69 @@
         </array>
     </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="3kp-Dl-lLe">
+            <objects>
+                <viewController id="DEM-Qc-XaW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lgc-pi-Uhy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Ixa-lH-DkH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m8G-3A-MLS">
+                                <rect key="frame" x="43" y="93" width="288" height="480"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assemble" translatesAutoresizingMaskIntoConstraints="NO" id="K6F-Wf-AKj">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="209"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="209" id="bkh-Wq-B4c"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Doing Great! You current score is 15." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CtF-ZT-LzJ">
+                                        <rect key="frame" x="0.0" y="209" width="288" height="271"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="Bv1-3c-ad3"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSI-4e-kv1">
+                                <rect key="frame" x="307" y="61" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="KUw-Vw-Wy7"/>
+                                    <constraint firstAttribute="height" constant="24" id="fNd-oW-lrp"/>
+                                </constraints>
+                                <state key="normal" title="exit" image="cross"/>
+                                <connections>
+                                    <segue destination="lIX-NY-IRX" kind="unwind" unwindAction="exitScoreWithSegue:" id="JO3-1g-aJd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ixa-lH-DkH" firstAttribute="top" secondItem="Lgc-pi-Uhy" secondAttribute="top" id="3uU-RW-8uU"/>
+                            <constraint firstItem="m8G-3A-MLS" firstAttribute="centerY" secondItem="Ixa-lH-DkH" secondAttribute="centerY" id="BK6-Ou-HAT"/>
+                            <constraint firstItem="Ixa-lH-DkH" firstAttribute="leading" secondItem="Lgc-pi-Uhy" secondAttribute="leading" id="J0M-U1-IoV"/>
+                            <constraint firstItem="bSI-4e-kv1" firstAttribute="top" secondItem="68M-Jl-6qH" secondAttribute="top" constant="41" id="Jtq-LQ-0Um"/>
+                            <constraint firstItem="Ixa-lH-DkH" firstAttribute="bottom" secondItem="68M-Jl-6qH" secondAttribute="bottom" id="K1P-Zy-a16"/>
+                            <constraint firstItem="m8G-3A-MLS" firstAttribute="leading" secondItem="68M-Jl-6qH" secondAttribute="leading" constant="43" id="Nhb-JY-ais"/>
+                            <constraint firstItem="m8G-3A-MLS" firstAttribute="centerX" secondItem="Ixa-lH-DkH" secondAttribute="centerX" id="o9z-TK-YCl"/>
+                            <constraint firstAttribute="trailing" secondItem="Ixa-lH-DkH" secondAttribute="trailing" id="rLP-wP-o4h"/>
+                            <constraint firstItem="bSI-4e-kv1" firstAttribute="leading" secondItem="68M-Jl-6qH" secondAttribute="leading" constant="307" id="wFq-ib-hIf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="68M-Jl-6qH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hu4-E0-pPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lIX-NY-IRX" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="-583"/>
+        </scene>
         <!--Button View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -57,14 +120,23 @@
                                     <action selector="spiderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIG-b5-tkC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v06-v0-LPC">
-                                <rect key="frame" x="99" y="570" width="176" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNX-qv-xIC">
+                                <rect key="frame" x="112" y="570" width="150" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96238523721694946" green="0.70772498846054077" blue="0.22782307863235474" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.95973461866378784" green="0.68997049331665039" blue="0.20545154809951782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="My Score">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="DEM-Qc-XaW" kind="presentation" id="BgA-7c-PP8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -102,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173.59999999999999" y="104.7976011994003"/>
+            <point key="canvasLocation" x="57" y="104"/>
         </scene>
         <!--Card View Controller-->
         <scene sceneID="6rx-gM-qj2">
@@ -250,7 +322,9 @@ Hot Phrase</string>
     </scenes>
     <resources>
         <image name="AppBackground" width="320" height="480"/>
+        <image name="assemble" width="620" height="542"/>
         <image name="capButton" width="115" height="114"/>
+        <image name="cross" width="24" height="24"/>
         <image name="first" width="16" height="16"/>
         <image name="generalMarvelButton" width="111" height="111"/>
         <image name="ic-blk-tabbar-houndify-mic" width="16" height="16"/>

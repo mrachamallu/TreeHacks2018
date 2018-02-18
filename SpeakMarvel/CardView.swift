@@ -19,7 +19,7 @@ class Card: SwipableView {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: frame.width - 100, height: 200))
         imageView.contentMode = .scaleAspectFit
         imageView.image = #imageLiteral(resourceName: "spiderButton")
-        imageView.center = center
+        imageView.center = CGPoint(x: center.x, y: center.y - 150)
         addSubview(imageView)
         
         let title = UILabel(frame: CGRect(x:0, y:0, width: frame.width - 100, height: 100))

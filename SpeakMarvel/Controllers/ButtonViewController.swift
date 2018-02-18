@@ -14,6 +14,8 @@ class ButtonViewController: UIViewController {
         performSegue(withIdentifier: "toCardViewController", sender: nil)
     }
     
+    @IBAction func exitScore(segue:UIStoryboardSegue) {
+    }
     
     override func viewDidLoad() {
         print("")
