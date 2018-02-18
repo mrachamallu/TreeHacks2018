@@ -26,6 +26,10 @@ class Card: SwipableView {
         imageView.kf.setImage(with: url)
         imageView.center = CGPoint(x: center.x, y: center.y - 150)
         imageView.layer.cornerRadius = 10
+//        let blurEffect = UIBlurEffect(style: .dark)
+//        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+//        blurredEffectView.frame = imageView.bounds
+//        addSubview(blurredEffectView)
         addSubview(imageView)
         
         let title = UILabel(frame: CGRect(x:0, y:0, width: frame.width - 100, height: 100))
