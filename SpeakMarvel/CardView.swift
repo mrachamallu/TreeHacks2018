@@ -12,18 +12,21 @@ import KSSwipeStack
 import RxSwift
 
 class Card: SwipableView {
-    override func setData(_ data: SwipableData) {
+    
+    func setData(_ data: SwipableData, value: String) {
         super.setData(data)
         
         let title = UILabel(frame: CGRect(x:0, y:0, width: frame.width - 100, height: 100))
         title.center = CGPoint(x: center.x, y: center.y + 50)
-        title.text = "Bitchhhhh WERK"
+        title.text = value
         title.textColor = .kicksortPink
         title.textAlignment = .center
         title.font = UIFont(name: "HarabaraMaisBold-HarabaraMaisBold", size: 30)
         addSubview(title)
         
     }
+    
+    
 
 }
 
