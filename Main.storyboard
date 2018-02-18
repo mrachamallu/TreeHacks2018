@@ -180,16 +180,25 @@
         <scene sceneID="6rx-gM-qj2">
             <objects>
                 <viewController id="VsQ-hc-aFg" customClass="CardViewController" customModule="SpeakMarvel" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="n0P-nl-ZWw" customClass="SwipeView" customModule="KSSwipeStack">
+                    <view key="view" contentMode="scaleToFill" id="D6F-EF-06e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0P-nl-ZWw" customClass="SwipeView" customModule="KSSwipeStack">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="JXx-b2-eq7"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZS-Oy-uSb">
                                 <rect key="frame" x="0.0" y="533" width="375" height="134"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pZ-2k-vTb">
                                         <rect key="frame" x="169" y="49" width="37" height="37"/>
                                         <state key="normal" image="microphone"/>
+                                        <connections>
+                                            <action selector="microphonePress:" destination="VsQ-hc-aFg" eventType="touchUpInside" id="MOO-kJ-4SG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.62714070081710815" green="0.85200673341751099" blue="0.9204450249671936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -201,12 +210,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="trailing" secondItem="JXx-b2-eq7" secondAttribute="trailing" id="1Ar-1k-jTc"/>
-                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="height" secondItem="n0P-nl-ZWw" secondAttribute="height" multiplier="0.2" id="Aj0-J5-nAg"/>
-                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="leading" secondItem="JXx-b2-eq7" secondAttribute="leading" id="L2j-YN-iNY"/>
-                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="bottom" secondItem="JXx-b2-eq7" secondAttribute="bottom" id="xq1-ae-BMe"/>
+                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="leading" secondItem="D6F-EF-06e" secondAttribute="leading" id="8oY-wg-qao"/>
+                            <constraint firstAttribute="trailing" secondItem="AZS-Oy-uSb" secondAttribute="trailing" id="CU5-fl-d0l"/>
+                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="bottom" secondItem="s5i-OM-zad" secondAttribute="bottom" id="ZMM-UJ-7Ak"/>
+                            <constraint firstItem="AZS-Oy-uSb" firstAttribute="top" secondItem="s5i-OM-zad" secondAttribute="top" constant="469" id="nrF-LX-IXI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="JXx-b2-eq7"/>
+                        <viewLayoutGuide key="safeArea" id="s5i-OM-zad"/>
                     </view>
                     <navigationItem key="navigationItem" id="mTB-pU-b56"/>
                     <connections>
@@ -215,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kx-QU-gM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1813.5999999999999" y="103.89805097451276"/>
+            <point key="canvasLocation" x="1804" y="103.89805097451276"/>
         </scene>
         <!--Houndify UI-->
         <scene sceneID="4Ih-A7-cNk">
@@ -318,6 +327,65 @@ Hot Phrase</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2pW-rr-ked" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="969.60000000000002" y="104.34782608695653"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="MaD-gb-ROZ">
+            <objects>
+                <viewController id="aPm-Sn-OSM" customClass="MainViewController" customModule="SpeakMarvel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Ucd-mT-G6m" customClass="SwipeView" customModule="KSSwipeStack">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vm0-oE-CFv">
+                                <rect key="frame" x="0.0" y="533" width="375" height="134"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo7-Lo-RE3">
+                                        <rect key="frame" x="169" y="49" width="37" height="37"/>
+                                        <state key="normal" image="microphone"/>
+                                        <connections>
+                                            <action selector="microphonePress:" destination="aPm-Sn-OSM" eventType="touchUpInside" id="ppO-XR-VO8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.62714070079999995" green="0.85200673339999999" blue="0.92044502500000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vo7-Lo-RE3" firstAttribute="centerX" secondItem="Vm0-oE-CFv" secondAttribute="centerX" id="gcE-HA-3GG"/>
+                                    <constraint firstItem="vo7-Lo-RE3" firstAttribute="centerY" secondItem="Vm0-oE-CFv" secondAttribute="centerY" id="z0S-62-8GB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vm0-oE-CFv" firstAttribute="bottom" secondItem="ymf-YK-P8W" secondAttribute="bottom" id="NFn-Rh-nIq"/>
+                            <constraint firstItem="Vm0-oE-CFv" firstAttribute="height" secondItem="Ucd-mT-G6m" secondAttribute="height" multiplier="0.2" id="X53-cs-Kyn"/>
+                            <constraint firstItem="Vm0-oE-CFv" firstAttribute="trailing" secondItem="ymf-YK-P8W" secondAttribute="trailing" id="ryq-Dd-34G"/>
+                            <constraint firstItem="Vm0-oE-CFv" firstAttribute="leading" secondItem="ymf-YK-P8W" secondAttribute="leading" id="tAw-Nc-lGR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ymf-YK-P8W"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NI8-Fw-YTK"/>
+                    <connections>
+                        <outlet property="swipeView" destination="Ucd-mT-G6m" id="urm-6f-c1C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iEW-TF-946" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2964" y="33"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2sq-es-3bN">
+            <objects>
+                <viewController id="W8T-SE-QSx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YVe-Yv-7oL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZLi-lL-qSv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GaF-yF-d3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="952"/>
         </scene>
     </scenes>
     <resources>
