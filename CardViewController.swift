@@ -24,19 +24,32 @@ class CardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let parameters: Parameters = [
-            "1009610": "10"
+            "characterId": "1009610",
+            "limit": 10
         ]
-        Alamofire.request("http://marvelous-195508.appspot.com/cards", method: .get, parameters : parameters).validate().responseJSON { response in
-            switch response.result {
-            case .success(let value):
-                let json = JSON(value)
-                self.displayQuote.text = json["name"].string
-                print("This is the name: \(json["name"] )")
-                print("JSON: \(json)")
-            case .failure(let error):
-                print(error)
-            }
-        }
+//        Alamofire.request("http://marvelous-195508.appspot.com/cards", method: .get, parameters : parameters).validate().responseJSON { response in
+//            switch response.result {
+//            case .success(let value):
+//                let json = JSON(value)
+//                self.displayQuote.text = json["name"].string
+//                print("This is the name: \(json["name"] )")
+//                print("JSON: \(json)")
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+        Alamofire.request("http://marvelous-195508.appspot.com/cards", method: .get, parameters: parameters).validate().responseJSON { response in
+                        switch response.result {
+                        case .success(let value):
+                            let json = JSON(value)
+                            self.displayQuote.text = json[0]["name"].string
+                            print("This is the name: \(json[0]["name"].string )")
+                            print("JSON: \(json)")
+                        case .failure(let error):
+                            print(error)
+                        }
+                    }
+        
         
         // optional customization
         var swipeOptions = SwipeOptions()
