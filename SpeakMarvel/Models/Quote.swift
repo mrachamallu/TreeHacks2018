@@ -1,11 +1,9 @@
-//
 //  Quote.swift
 //  SpeakMarvel
 //
 //  Created by Akshara Sundararajan on 2/17/18.
 //  Copyright © 2018 meera. All rights reserved.
 //
-
 import Foundation
 import SwiftyJSON
 
@@ -29,16 +27,16 @@ class Quote{
     
     func checkIfWordIsCommon(word: String) -> Bool
     {
-//        if let path = Bundle.mainBundle.path(forResource: "data", ofType: "json") {
-//            if let data = NSData(contentsOfFile: "dalechellwordlist") {
-//                let json = JSON(data: data, options: JSONSerialization.ReadingOptions.AllowFragments, error: nil)
-//
-//            }
-//        }
-//        let data = NSData(contentsOfFile: "dalechellwordlist.json")
-//        if let jsonData = data {
-//
-//        }
+        //        if let path = Bundle.mainBundle.path(forResource: "data", ofType: "json") {
+        //            if let data = NSData(contentsOfFile: "dalechellwordlist") {
+        //                let json = JSON(data: data, options: JSONSerialization.ReadingOptions.AllowFragments, error: nil)
+        //
+        //            }
+        //        }
+        //        let data = NSData(contentsOfFile: "dalechellwordlist.json")
+        //        if let jsonData = data {
+        //
+        //        }
         if let path = Bundle.main.path(forResource: "dalechellwordlist", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
@@ -155,4 +153,3 @@ class Quote{
     
     
 }
-

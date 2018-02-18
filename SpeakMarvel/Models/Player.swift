@@ -1,11 +1,9 @@
-//
 //  Player.swift
 //  SpeakMarvel
 //
 //  Created by Admin on 2/16/18.
 //  Copyright © 2018 meera. All rights reserved.
 //
-
 import Foundation
 
 class Player{
@@ -46,7 +44,12 @@ class Player{
             
             runningCorrect = 0
         }
-    
+        else if runningCorrect < -4
+        {
+            difficultyRange = difficultyRange - 1
+            runningCorrect = 0
+        }
+        
     }
     
     func updateScore(spokenSentence: String)
@@ -56,7 +59,10 @@ class Player{
             runningCorrect = runningCorrect+1
             Score = Score + Int(currentQuote.difficulty*10)
         }
+        else
+        {
+            runningCorrect = runningCorrect - 1
+        }
     }
     
 }
-
