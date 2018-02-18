@@ -6,7 +6,7 @@ target 'SpeakMarvel' do
 
   # Pods for SpeakMarvel
   pod 'CardsLayout'
-  
+  pod ‘KSSwipeStack’
   pod 'Alamofire'
   pod 'Moya'
   pod 'SwiftyJSON'
