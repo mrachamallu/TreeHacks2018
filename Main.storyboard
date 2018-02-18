@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OV9-6E-mVd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -175,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="104"/>
+            <point key="canvasLocation" x="-52" y="104"/>
         </scene>
         <!--Card View Controller-->
         <scene sceneID="6rx-gM-qj2">
@@ -388,6 +388,52 @@ Hot Phrase</string>
             </objects>
             <point key="canvasLocation" x="1225" y="952"/>
         </scene>
+        <!--Start View Controller-->
+        <scene sceneID="6ek-Je-7L8">
+            <objects>
+                <viewController id="OV9-6E-mVd" customClass="StartViewController" customModule="SpeakMarvel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cvh-Ke-Vj4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvf-Kl-Vxh">
+                                <rect key="frame" x="85" y="423" width="204" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="vlu-8K-bUU"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="startButt"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="igm-wV-YPk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startImage" translatesAutoresizingMaskIntoConstraints="NO" id="UIP-TH-wUR">
+                                <rect key="frame" x="43" y="81" width="288" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="DVn-Fz-veX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34921959042549133" green="0.78889316320419312" blue="0.92328977584838867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eJM-cc-kWx" firstAttribute="bottom" secondItem="wvf-Kl-Vxh" secondAttribute="bottom" constant="113" id="2Yg-le-fWA"/>
+                            <constraint firstItem="UIP-TH-wUR" firstAttribute="leading" secondItem="eJM-cc-kWx" secondAttribute="leading" constant="43" id="Njf-5d-cTQ"/>
+                            <constraint firstItem="UIP-TH-wUR" firstAttribute="top" secondItem="eJM-cc-kWx" secondAttribute="top" constant="61" id="hhQ-sa-ob4"/>
+                            <constraint firstItem="wvf-Kl-Vxh" firstAttribute="leading" secondItem="eJM-cc-kWx" secondAttribute="leading" constant="85" id="kud-aa-R1o"/>
+                            <constraint firstItem="UIP-TH-wUR" firstAttribute="centerX" secondItem="wvf-Kl-Vxh" secondAttribute="centerX" id="xgv-4y-ZpU"/>
+                            <constraint firstItem="UIP-TH-wUR" firstAttribute="centerX" secondItem="cvh-Ke-Vj4" secondAttribute="centerX" id="zsA-mw-mEb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eJM-cc-kWx"/>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="wvf-Kl-Vxh" id="nH1-PG-TwE"/>
+                        <segue destination="dYG-Yd-ZDI" kind="unwind" identifier="backToStart" unwindAction="unwindToStartWithSegue:" id="89d-f6-jsC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDh-8y-NB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dYG-Yd-ZDI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-914.39999999999998" y="94.902548725637189"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AppBackground" width="320" height="480"/>
@@ -401,6 +447,8 @@ Hot Phrase</string>
         <image name="ironManButton" width="112" height="113"/>
         <image name="microphone" width="37" height="37"/>
         <image name="spiderButton" width="115" height="115"/>
+        <image name="startButt" width="635" height="266"/>
+        <image name="startImage" width="608" height="488"/>
         <image name="thorButton" width="113" height="112"/>
         <image name="wolverineButton" width="111" height="112"/>
     </resources>
