@@ -14,6 +14,7 @@ import SwiftyJSON
 import HoundifySDK
 import Kingfisher
 
+var cardNo = 0
 
 class CardViewController: UIViewController {
     
@@ -99,7 +100,8 @@ class CardViewController: UIViewController {
                                 print("RX SWIPE EVENT: \(swipe.direction)")
                             }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: self.disposableBag)
                             print("Using the Alamofire API")
-
+                            player.updateQuote(quote: quotes[cardNo])
+                            cardNo = cardNo + 1
                             self.swipeView.needsRefill().subscribe(onNext: { swipe in
                                 print("RX REFILL EVENT")
                             }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: self.disposableBag)
@@ -124,7 +126,7 @@ class ExampleData: SwipableData {
     func getView(with frame: CGRect) -> SwipableView {
         let view = Card(frame: frame)
         view.setData(self, titleVal: self.title, imageVal: self.image)
-        player.updateQuote(quote: Quote(quote: self.title, character: self.char, imageURL: self.image))
+        quotes.append(Quote(quote: self.title, character: self.char, imageURL: self.image))
         //view.setData(self, imageVal: self.image)
         return view
     }

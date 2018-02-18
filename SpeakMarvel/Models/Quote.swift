@@ -138,7 +138,7 @@ class Quote{
         newWord = newWord.replacingOccurrences(of:"!", with: "")
         newWord = newWord.replacingOccurrences(of:"(", with: "")
         newWord = newWord.replacingOccurrences(of:")", with: "")
-        
+        newWord = newWord.replacingOccurrences(of:"-", with: "")
         return newWord
     }
     
@@ -160,3 +160,4 @@ class Quote{
     
     
 }
+var quotes = [Quote]()
