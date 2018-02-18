@@ -12,10 +12,11 @@ import KSSwipeStack
 import RxSwift
 
 class Card: SwipableView {
-    
+    var uiColorArray = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.green]
     func setData(_ data: SwipableData, titleVal: String) {
         super.setData(data)
-        
+        let n = Int(arc4random_uniform(4))
+        backgroundColor = uiColorArray[n]
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: frame.width - 100, height: 200))
         imageView.contentMode = .scaleAspectFit
         imageView.image = #imageLiteral(resourceName: "spiderButton")
@@ -25,9 +26,9 @@ class Card: SwipableView {
         let title = UILabel(frame: CGRect(x:0, y:0, width: frame.width - 100, height: 100))
         title.center = CGPoint(x: center.x, y: center.y + 50)
         title.text = titleVal
-        title.textColor = .kicksortPink
+        title.textColor = UIColor.white
         title.textAlignment = .center
-        title.font = UIFont(name: "HarabaraMaisBold-HarabaraMaisBold", size: 30)
+        title.font = UIFont(name: "HarabaraMaisBold-HarabaraMaisBold", size: 40)
         addSubview(title)
         
     }
