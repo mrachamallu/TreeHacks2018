@@ -11,6 +11,7 @@ target 'SpeakMarvel' do
   pod 'Moya'
   pod 'SwiftyJSON'
   pod 'HoundifySDK'
+  pod 'Kingfisher', '~> 4.0'
 
 end
 

@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.6.0)
   - CardsLayout (0.0.1)
   - HoundifySDK (1.2.2)
+  - Kingfisher (4.6.2)
   - KSSwipeStack (0.4.2):
     - RxSwift
   - Moya (11.0.0):
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - Alamofire
   - CardsLayout
   - HoundifySDK
+  - Kingfisher (~> 4.0)
   - KSSwipeStack
   - Moya
   - SwiftyJSON
@@ -25,12 +27,13 @@ SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   CardsLayout: ceeb8f9c26319b47a2f0995ea4590cf7ba881462
   HoundifySDK: aab761291dbec85cb4da3f529189b7b5b7e351ef
+  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
   KSSwipeStack: 5ff89a5c44d5ddd361d32a63d1ad2a70d5f1cf59
   Moya: be29766339783963a70d1279d69c891ab3a1393c
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 43d00f5eef2f95384d68beb9448e8f5de9ef0fa2
+PODFILE CHECKSUM: 0c7176c76a8ae84d1b0c5c4daa74085a00f77cb6
 
 COCOAPODS: 1.4.0

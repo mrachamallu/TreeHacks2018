@@ -12,6 +12,7 @@ import RxSwift
 import Alamofire
 import SwiftyJSON
 import HoundifySDK
+import Kingfisher
 
 
 class CardViewController: UIViewController {
@@ -122,7 +123,7 @@ class ExampleData: SwipableData {
 
     func getView(with frame: CGRect) -> SwipableView {
         let view = Card(frame: frame)
-        view.setData(self, titleVal: self.title)
+        view.setData(self, titleVal: self.title, imageVal: self.image)
         player.updateQuote(quote: Quote(quote: self.title, character: self.char, imageURL: self.image))
         //view.setData(self, imageVal: self.image)
         return view
