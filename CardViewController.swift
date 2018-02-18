@@ -17,7 +17,7 @@ import HoundifySDK
 class CardViewController: UIViewController {
     
     fileprivate func dismissSearch() {
-        //call 3 funcs from player
+        
         Houndify.instance().dismissListeningViewController(animated: true, completionHandler: nil)
     }
     @IBAction func microphonePress(_ sender: Any) {
@@ -37,6 +37,14 @@ class CardViewController: UIViewController {
                     let myStringDict = nativeData as? [String : AnyObject]
                     let test = myStringDict!["RawTranscription"]! as! String
                     print(myStringDict!["RawTranscription"]!)
+                    print("Using the Houndify API")
+                    if player.currentQuote.checkQuoteSaidIsCorrect(spokenQuote:test)
+                    {
+                        //code to change the image here and update stuff
+                        player.updateScore(spokenSentence: test)
+                        
+                    }
+                    player.updateDifficulty()
                     //here is where we update everything
                 }
                 
@@ -73,9 +81,13 @@ class CardViewController: UIViewController {
 
                             for i in 1...10 {
                                 let title = json[i]["quote"].string
+                                let image = json[i]["image"].string
+                                let char = json[i]["name"].string
+                                
+                                
                                 //let image = json[i]["image"].string
                                 if ((title != nil) ) {
-                                    let exampleData = ExampleData(title: title!)
+                                    let exampleData = ExampleData(title: title!, char: char!, image: image!)
                                     self.swipeView.addCard(exampleData)
                                 }
 
@@ -85,6 +97,7 @@ class CardViewController: UIViewController {
                             self.swipeView.getSwipes().subscribe(onNext: { swipe in
                                 print("RX SWIPE EVENT: \(swipe.direction)")
                             }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: self.disposableBag)
+                            print("Using the Alamofire API")
 
                             self.swipeView.needsRefill().subscribe(onNext: { swipe in
                                 print("RX REFILL EVENT")
@@ -104,17 +117,21 @@ class CardViewController: UIViewController {
 class ExampleData: SwipableData {
 
     var title: String
-    //var image: String
+    var char: String
+    var image: String
 
     func getView(with frame: CGRect) -> SwipableView {
         let view = Card(frame: frame)
         view.setData(self, titleVal: self.title)
+        player.updateQuote(quote: Quote(quote: self.title, character: self.char, imageURL: self.image))
         //view.setData(self, imageVal: self.image)
         return view
     }
 
-    init(title: String) {
+    init(title: String, char: String, image: String) {
         self.title = title
+        self.char = char
+        self.image = image
         //self.image = image
     }
 }

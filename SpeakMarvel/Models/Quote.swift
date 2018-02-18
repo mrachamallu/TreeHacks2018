@@ -11,15 +11,21 @@ class Quote{
     var quote: String
     var difficulty: Float
     var character: String
-    var imageURL: URL
+    var imageURL: String
     
-    init(quote: String, difficulty: Float, character: String, imageURL: URL){
+    init(quote: String, difficulty: Float, character: String, imageURL: String){
         self.character = character
         self.difficulty = difficulty
         self.quote = quote
         self.imageURL = imageURL
     }
-    
+    init()
+    {
+        quote = "With great power comes great responsibility"
+        difficulty = 4
+        character = "Uncle Ben"
+        imageURL = "tinyurl.com/random"
+    }
     enum Difficulty
     {
         case EASY, HARD
@@ -41,7 +47,7 @@ class Quote{
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
                 let jsonObj = try JSON(data: data)
-                if(jsonObj.dictionary![word]?.exists())!
+                if(jsonObj[word].exists())
                 {
                     return true
                 }
@@ -70,8 +76,9 @@ class Quote{
     func numberOfWordsInDifferentCategories(quote:String) -> [Float]
     {
         var numberOfWordsOfEachDifficulty = [Float] ()
-        numberOfWordsOfEachDifficulty[0] = 0 //easy
-        numberOfWordsOfEachDifficulty[1] = 0 //hard
+        numberOfWordsOfEachDifficulty.append(0.0)
+        numberOfWordsOfEachDifficulty.append(0.0)
+        
         
         var newQuote = quote.replacingOccurrences(of: ",", with: " ")
         newQuote = newQuote.replacingOccurrences(of: ".", with: " ")
@@ -114,7 +121,7 @@ class Quote{
         return rawScore
     }
     
-    init(quote: String, character: String, imageURL: URL){
+    init(quote: String, character: String, imageURL: String){
         self.character = character
         self.difficulty = 0
         self.quote = quote

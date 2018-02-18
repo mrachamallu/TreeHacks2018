@@ -28,6 +28,14 @@ class Player{
         runningCorrect = 0
     }
     
+    init ()
+    {
+        self.currentQuote = Quote()
+        difficultyRange = 5
+        Score = 0
+        runningCorrect = 0
+    }
+    
     func updateQuote(quote: Quote)
     {
         currentQuote = quote
@@ -66,3 +74,5 @@ class Player{
     }
     
 }
+
+var player = Player()

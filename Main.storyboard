@@ -37,10 +37,11 @@
                                             <constraint firstAttribute="height" constant="209" id="bkh-Wq-B4c"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Doing Great! You current score is 15." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CtF-ZT-LzJ">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Doing Great! Your current score is 15." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CtF-ZT-LzJ">
                                         <rect key="frame" x="0.0" y="209" width="288" height="271"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
